@@ -236,6 +236,10 @@ spec:
         value: $(tasks.prefetch-dependencies.results.CACHI2_ARTIFACT)
       - name: IMAGE_APPEND_PLATFORM
         value: "true"
+      - name: STORAGE_DRIVER
+        value: overlay
+      - name: PRIVILEGED_NESTED
+        value: "true"
       runAfter:
       - prefetch-dependencies
       taskRef:
@@ -243,7 +247,7 @@ spec:
         - name: name
           value: buildah-remote-oci-ta
         - name: bundle
-          value: quay.io/zxiong/task-buildah-remote-oci-ta:0.49
+          value: quay.io/zxiong/task-buildah-remote-oci-ta:0.4.1
         - name: kind
           value: task
         resolver: bundles
