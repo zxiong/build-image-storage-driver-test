@@ -28,7 +28,9 @@ spec:
     value: 5d
   - name: build-platforms
     value:
-    - linux/x86_64
+      - linux/amd64
+      - linux/arm64
+      - linux/ppc64le
   - name: dockerfile
     value: docker/Dockerfile.10m10
   pipelineSpec:
@@ -109,7 +111,9 @@ spec:
       name: build-args-file
       type: string
     - default:
-      - linux/x86_64
+      - linux/amd64
+      - linux/arm64
+      - linux/ppc64le
       description: List of platforms to build the container images on. The available
         set of values is determined by the configuration of the multi-platform-controller.
       name: build-platforms
