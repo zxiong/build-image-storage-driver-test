@@ -28,8 +28,6 @@ spec:
     value: 5d
   - name: build-platforms
     value:
-      - linux/amd64
-      - linux/arm64
       - linux/ppc64le
   - name: dockerfile
     value: docker/Dockerfile.10m10
