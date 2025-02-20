@@ -112,8 +112,6 @@ spec:
       type: string
     - default:
       - linux/amd64
-      - linux/arm64
-      - linux/ppc64le
       description: List of platforms to build the container images on. The available
         set of values is determined by the configuration of the multi-platform-controller.
       name: build-platforms
@@ -247,7 +245,7 @@ spec:
         - name: name
           value: buildah-remote-oci-ta
         - name: bundle
-          value: quay.io/zxiong/task-buildah-remote-oci-ta:0.443
+          value: quay.io/zxiong/task-buildah-remote-oci-ta:0.444
         - name: kind
           value: task
         resolver: bundles
