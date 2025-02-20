@@ -247,7 +247,7 @@ spec:
         - name: name
           value: buildah-remote-oci-ta
         - name: bundle
-          value: quay.io/zxiong/task-buildah-remote-oci-ta:0.427
+          value: quay.io/zxiong/task-buildah-remote-oci-ta:0.443
         - name: kind
           value: task
         resolver: bundles
